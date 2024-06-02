@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-brand--1: #ffb545;
+  --color-brand--2: #00c46a;
+
+  --color-dark--0: #242a2e;
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+  --color-light--1: #aaa;
+  --color-light--2: #ececec;
+  --color-light--3: #d6dee0;
+}
+
+/* * {
+  scroll-behavior: smooth;
+} */
+
+/* sizing of map*/
+.leaflet-container {
+  width: 80%;
+  height: 100%;
+}
+.gradientBg {
+  background: linear-gradient(99deg, #77b0aa 0%, #4d869c 100%);
+}
+nav {
+  z-index: 10001 !important;
+}
