@@ -19,19 +19,19 @@ function HomePage() {
               viewport={{ once: false, amount: 0.5 }}
               className="md:w-3/5"
             >
-              <h2 className="md-text-7xl text-4xl font-bold text-white mb-6 leading-relaxed">
+              <h2 className="md:text-4xl text-2xl font-bold text-white mb-6 leading-relaxed">
                 <span className="border-b-2">GlobeGraph</span> diligently tracks
                 your adventures.
               </h2>
-              <p className="text-[#EBEBEB] text-2xl mb-8">
+              <p className="text-[#EBEBEB] md:text-2xl mb-8">
                 Explore a world map that logs your visits to every city
                 imaginable. Cherish your memorable journeys and share your
                 global adventures with friends.
               </p>
-              <div>
+              <div className="md:mt-0 mt-[4rem]">
                 <Link
                   to="/map"
-                  className="py-3 px-8 bg-secondary font-semibold text-white rounded hover:bg-primary transition-all"
+                  className="py-3 px-8  bg-secondary font-semibold text-white rounded hover:bg-primary transition-all"
                 >
                   Start tracking now
                 </Link>
@@ -43,10 +43,10 @@ function HomePage() {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.5 }}
             >
-              <img
+              <img 
                 src="fashion.png"
                 alt=""
-                className="lg:h[386px] rotate-[270deg]"
+                className="lg:h[386px] w-[19rem] rotate-[270deg]"
               />
             </motion.div>
           </div>
