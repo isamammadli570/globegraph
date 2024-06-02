@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fadeIn } from "../variant.js";
+import { fadeIn } from "../../Pages/variant.js";
 
 function NewsLetter() {
   return (
@@ -11,7 +11,7 @@ function NewsLetter() {
               variants={fadeIn("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: false, amount: 0.2 }}
               className="md:w-3/5"
             >
               <h2 className="md-text-7xl text-4xl font-bold text-white mb-6 leading-relaxed">
@@ -24,7 +24,7 @@ function NewsLetter() {
               variants={fadeIn("down", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: false, amount: 0.2 }}
             >
               <img
                 src="fashion.png"

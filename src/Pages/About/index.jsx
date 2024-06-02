@@ -1,18 +1,18 @@
 import { motion } from "framer-motion";
-import { fadeIn } from "../variant.js";
+import { fadeIn } from "../../Pages/variant.js";
 
 function About() {
   return (
     <div
       id="about"
-      className="px-14 p-4 md:mt-0 mt-[33rem] max-w-s mx-auto space-y-10 flex flex-col justify-center items-center h-screen"
+      className="px-14 p-4 md:mt-0 mt-[36rem] max-w-s mx-auto space-y-10 flex flex-col justify-center items-center h-screen"
     >
       <div className="flex flex-col md:flex-row justify-between items-center gap-16">
         <motion.div
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.2 }}
         >
           <img src="reading.png" className="w-[32rem]" alt="" />
         </motion.div>
@@ -21,7 +21,7 @@ function About() {
           variants={fadeIn("left", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.2 }}
           className="md:w-2/5"
         >
           <h2 className="md:text-5xl text-3xl font-bold text-primary mb-5 leading-normal">
@@ -43,7 +43,7 @@ function About() {
           variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.2 }}
         >
           <img src="universe.png" className="w-[28rem]" alt="" />
         </motion.div>
@@ -52,7 +52,7 @@ function About() {
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.2 }}
           className="md:w-2/5"
         >
           <h2 className="md:text-5xl text-3xl font-bold text-primary mb-5 leading-normal">

@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
-import PageNav from "./Components/PageNav";
+import PageNav from "./Pages/PageNav";
 import Features from "./Pages/Features";
 import HomePage from "./Pages/HomePage";
 import About from "./Pages/About";
 import Pricing from "./Pages/Pricing";
 import NewsLetter from "./Pages/NewsLetter";
-import Footer from "./Components/Footer";
+import Footer from "./Pages/Footer";
 
 function AppLayout() {
   return (

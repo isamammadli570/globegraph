@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "../variant.js";
+import { fadeIn } from "../../Pages/variant.js";
 
 function Pricing() {
   const [isYearly, setIsYearly] = useState(false);
@@ -35,7 +35,7 @@ function Pricing() {
   return (
     <div
       id="pricing"
-      className="md:px-14 md:mt-0 mt-[45rem] p-4 max-w-s mx-auto py-10 flex flex-col justify-center items-center h-screen"
+      className="md:px-14 md:mt-0 mt-[50rem] p-4 max-w-s mx-auto py-10 flex flex-col justify-center items-center h-screen"
     >
       <div className="text-center">
         <h2 className="md:text-5xl text-3xl font-extrabold text-primary mb-2">
@@ -75,7 +75,7 @@ function Pricing() {
         variants={fadeIn("up", 0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.2 }}
         className="md:grid grid-cols-3 gap-10 mt-20 w-11/12 mx-auto "
       >
         {packages.map((pkg, i) => (

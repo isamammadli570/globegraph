@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { motion } from "framer-motion";
-import { fadeIn } from "../variant.js";
+import { fadeIn } from "../../Pages/variant.js";
 
 function HomePage() {
   return (
