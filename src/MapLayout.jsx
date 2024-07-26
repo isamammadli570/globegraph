@@ -5,8 +5,7 @@ import Footer from "./Pages/Footer/index.jsx";
 function MapLayout() {
   return (
     <div>
-      <PageNav/>
-      <div className="flex p-12 relative h-lvh overscroll-y-none ">
+      <div className="flex p-6 relative h-lvh overscroll-y-none ">
         <Sidebar />
         <Map />
       </div>
