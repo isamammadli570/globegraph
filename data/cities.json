@@ -1,0 +1,40 @@
+{
+  "cities": [
+    {
+      "id": "3b1d",
+      "cityName": "Madrid",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-07-26T15:08:32.357Z",
+      "notes": "",
+      "position": {
+        "lat": "40.3130432088809",
+        "lng": "-3.603378458014111"
+      }
+    },
+    {
+      "id": "f58d",
+      "cityName": "Greve in Chianti",
+      "country": "Italy",
+      "emoji": "🇮🇹",
+      "date": "2024-07-26T15:08:39.567Z",
+      "notes": "asdfv",
+      "position": {
+        "lat": "43.61221676817573",
+        "lng": "11.301894723303102"
+      }
+    },
+    {
+      "id": "adda",
+      "cityName": "Mojados",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-07-26T15:25:17.923Z",
+      "notes": "",
+      "position": {
+        "lat": "41.409775832009565",
+        "lng": "-4.664157035921426"
+      }
+    }
+  ]
+}

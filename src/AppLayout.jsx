@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import PageNav from "./Pages/PageNav";
+import PageNav from "./Components/PageNav";
 import Features from "./Pages/Features";
 import HomePage from "./Pages/HomePage";
 import About from "./Pages/About";
