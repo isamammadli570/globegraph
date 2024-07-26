@@ -27,9 +27,6 @@
 .gradientBg {
   background: linear-gradient(99deg, #77b0aa 0%, #4d869c 100%);
 }
-.gradientBg2{
-  background-color: var(--color-dark--0);
-}
 nav {
   z-index: 10001 !important;
 }

@@ -29,7 +29,7 @@
   bottom: 4rem;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--color-dark--2);
+  background: linear-gradient(99deg, #77b0aa 0%, #4d869c 100%);
   color:  white;
   box-shadow: 0 0.4rem 1.2rem rgba(36, 42, 46, 0.16);
 }

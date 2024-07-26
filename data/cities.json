@@ -1,39 +1,39 @@
 {
   "cities": [
     {
-      "id": "3b1d",
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-07-26T15:08:32.357Z",
-      "notes": "",
+      "id": "acbe",
+      "cityName": "Baku",
+      "country": "Azerbaijan",
+      "emoji": "🇦🇿",
+      "date": "2024-07-26T16:00:50.482Z",
+      "notes": "fav ",
       "position": {
-        "lat": "40.3130432088809",
-        "lng": "-3.603378458014111"
+        "lat": "40.271143686084194",
+        "lng": "49.816695249321334"
       }
     },
     {
-      "id": "f58d",
-      "cityName": "Greve in Chianti",
-      "country": "Italy",
-      "emoji": "🇮🇹",
-      "date": "2024-07-26T15:08:39.567Z",
-      "notes": "asdfv",
+      "id": "d025",
+      "cityName": "Susa",
+      "country": "Azerbaijan",
+      "emoji": "🇦🇿",
+      "date": "2024-07-26T16:02:44.201Z",
+      "notes": "",
       "position": {
-        "lat": "43.61221676817573",
-        "lng": "11.301894723303102"
+        "lat": "39.715638134796365",
+        "lng": "46.771954031812086"
       }
     },
     {
-      "id": "adda",
-      "cityName": "Mojados",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-07-26T15:25:17.923Z",
+      "id": "9b30",
+      "cityName": "Goygol",
+      "country": "Azerbaijan",
+      "emoji": "🇦🇿",
+      "date": "2024-07-26T16:03:00.804Z",
       "notes": "",
       "position": {
-        "lat": "41.409775832009565",
-        "lng": "-4.664157035921426"
+        "lat": "40.588928169693745",
+        "lng": "46.4095489279258"
       }
     }
   ]

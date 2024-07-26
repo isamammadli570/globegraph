@@ -30,7 +30,7 @@ function HomePage() {
               </p>
               <div className="md:mt-0 mt-[4rem]">
                 <Link
-                  to="/map"
+                  to="/map/cities"
                   className="py-3 px-8  bg-secondary font-semibold text-white rounded hover:bg-primary transition-all"
                 >
                   Start tracking now
