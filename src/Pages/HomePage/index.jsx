@@ -8,6 +8,7 @@ function HomePage() {
     <section
       id="home"
       className="flex flex-col mt-10 items-center justify-center gap-2.5   "
+      
     >
       <div className="md:px-12 p-4 max-w-screen-2xl mx-auto mt-24 w-full h-full">
         <div className="gradientBg rounded-xl rounded-br-[80px] md:p-9 px-4 py-9">

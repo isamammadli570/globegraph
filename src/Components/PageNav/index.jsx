@@ -6,6 +6,7 @@ import { FaXmark } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
 //scroll
 import { Link } from "react-scroll";
+import DarkMode from "../DarkMode";
 
 function PageNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ function PageNav() {
   ];
   return (
     <>
-      <nav className="bg-white md:px-14 px-5 border-b max-w-screen-2xl mx-auto fixed top-0 right-0 left-0 text-primary ">
+      <nav className="bg-white darkApp md:px-14 px-5 border-b max-w-screen-2xl mx-auto fixed top-0 right-0 left-0 ">
         <div className="text-lg container mx-auto flex justify-between items-center font-medium">
           <div className="flex space-x-14 items-center">
             <a href="/">
@@ -47,6 +48,7 @@ function PageNav() {
 
           <div className="flex gap-10 items-center">
             <div className="md:space-x-12 md:flex items-center ">
+              <DarkMode />
               <a
                 href="/"
                 className="hidden lg:flex items-center hover:text-secondary"

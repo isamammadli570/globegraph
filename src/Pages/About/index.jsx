@@ -24,9 +24,9 @@ function About() {
           viewport={{ once: false, amount: 0.2 }}
           className="md:w-2/5"
         >
-          <h2 className="md:text-5xl text-3xl font-bold text-primary mb-5 leading-normal">
+          <h2 className="md:text-5xl darkApp text-3xl font-bold text-primary mb-5 leading-normal">
             Explore with GlobeGraph:{" "}
-            <span className="text-secondary">Maps, Weather.</span>
+            <span className=" text-secondary">Maps, Weather.</span>
           </h2>
           <p className="text-third text-lg mb-7 ">
             {" "}
@@ -55,9 +55,9 @@ function About() {
           viewport={{ once: false, amount: 0.2 }}
           className="md:w-2/5"
         >
-          <h2 className="md:text-5xl text-3xl font-bold text-primary mb-5 leading-normal">
+          <h2 className="md:text-5xl darkApp text-3xl font-bold text-primary mb-5 leading-normal">
             Capture Your Adventures,{" "}
-            <span className="text-secondary">Share Your Story.</span>
+            <span className="text-secondary ">Share Your Story.</span>
           </h2>
           <p className="text-third text-lg mb-7 ">
             {" "}

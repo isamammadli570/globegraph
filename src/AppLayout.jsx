@@ -9,7 +9,7 @@ import Footer from "./Pages/Footer";
 
 function AppLayout() {
   return (
-    <div>
+    <div >
       <div>
         <PageNav />
         <HomePage />

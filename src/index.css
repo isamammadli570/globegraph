@@ -14,9 +14,9 @@
   --color-light--3: #d6dee0;
 }
 
-/* * {
-  scroll-behavior: smooth;
-} */
+*{
+  transition: all 0.3s ease-in-out;
+}
 
 
 /* sizing of map*/
@@ -27,6 +27,23 @@
 .gradientBg {
   background: linear-gradient(99deg, #77b0aa 0%, #4d869c 100%);
 }
+body{
+  background-color: var(--body_background);
+  
+}
+.darkApp{
+  background-color: var(--body_background);
+  color: var(--body_color);
+}
 nav {
   z-index: 10001 !important;
 }
+:root {
+  --body_background: white;
+  --body_color: black;
+}
+[data-theme="dark"] {
+  --body_background: #151617;
+  --body_color: white;
+}
+

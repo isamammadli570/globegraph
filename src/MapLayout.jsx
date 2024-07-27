@@ -4,7 +4,6 @@ import Footer from "./Pages/Footer/index.jsx";
 function MapLayout() {
   return (
     <div>
-      
       <div className="flex  relative h-lvh overscroll-y-none ">
         <Sidebar />
         <Map />

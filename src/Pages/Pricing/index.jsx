@@ -38,10 +38,10 @@ function Pricing() {
       className="md:px-14 md:mt-0 mt-[50rem] p-4 max-w-s mx-auto py-10 flex flex-col justify-center items-center h-screen"
     >
       <div className="text-center">
-        <h2 className="md:text-5xl text-3xl font-extrabold text-primary mb-2">
+        <h2 className="md:text-5xl darkApp text-3xl font-extrabold text-primary mb-2">
           Here are all our plans
         </h2>
-        <p className="text-primary md:w-1/2 mx-auto px-4">
+        <p className="text-primary darkApp md:w-1/2 mx-auto px-4">
           Explore our diverse plans catering to all needs. Find your perfect fit
           today!
         </p>
@@ -51,7 +51,7 @@ function Pricing() {
             htmlFor="toggle"
             className="inline-flex items-center cursor-pointer "
           >
-            <span className="mr-8 text-2xl font-semibold ">Monthly</span>
+            <span className="mr-8 text-2xl font-semibold darkApp ">Monthly</span>
             <div className="w-14 h-6 bg-gray-300 rounded-full transition duration-200 ease-in-out">
               <div
                 className={`w-6 h-6 rounded-full  ${
@@ -59,7 +59,7 @@ function Pricing() {
                 }`}
               ></div>
             </div>
-            <span className="ml-8 text-2xl font-semibold">Yearly</span>
+            <span className="ml-8 text-2xl font-semibold darkApp">Yearly</span>
           </label>
           <input
             type="checkbox"
@@ -79,8 +79,8 @@ function Pricing() {
         className="md:grid grid-cols-3 gap-10 mt-20 w-11/12 mx-auto "
       >
         {packages.map((pkg, i) => (
-          <div className="border py-10 px-4 rounded-lg shadow-3xl " key={i}>
-            <h3 className="text-3xl font-bold text-center text-primary">
+          <div className="border py-10 px-4 rounded-lg shadow-3xl darkApp" key={i}>
+            <h3 className="text-3xl font-bold text-center text-primary darkApp">
               {pkg.name}
             </h3>
 
