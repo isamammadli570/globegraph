@@ -3,11 +3,12 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import PageNotFound from "./Pages/PageNotFound/index.jsx";
 import AppLayout from "./AppLayout.jsx";
 import MapLayout from "./MapLayout.jsx";
-import CityList from "./MapExt/CityList.jsx";
-import CountryList from "./MapExt/CountryList.jsx";
-import City from "./MapExt/City.jsx";
-import Form from "./MapExt/Form.jsx";
+import CityList from "./Components/City/CityList.jsx";
+import CountryList from "./Components/Country/CountryList.jsx";
+import City from "./Components/City/City.jsx";
+import Form from "./Components/Form/Form.jsx";
 import CitiesProvider from "./contexts/CitiesContext.jsx";
+
 
 function App() {
   return (

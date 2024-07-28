@@ -10,7 +10,7 @@ import "leaflet/dist/leaflet.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useCities } from "../../contexts/CitiesContext";
-import Button from "../../MapExt/Button";
+import Button from "../Button/Button";
 
 import styles from "./Map.module.css";
 import { useUrlPosition } from "../../hooks/useUrlPosition";

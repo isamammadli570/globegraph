@@ -1,9 +1,9 @@
 import { useParams, useSearchParams } from "react-router-dom";
 import styles from "./City.module.css";
 import { useEffect, useState } from "react";
-import { useCities } from "../contexts/CitiesContext";
-import Spinner from "./Spinner";
-import ButtonBack from "./ButtonBack";
+import { useCities } from "../../contexts/CitiesContext";
+import Spinner from "../Spinner/Spinner";
+import ButtonBack from "../Button/ButtonBack";
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
@@ -13,9 +13,26 @@ const formatDate = (date) =>
     weekday: "long",
   }).format(new Date(date));
 
+const api = {
+  key: "9431c8ce43c3e0914d1311649ce8adb2",
+  baseUrl: "https://api.openweathermap.org/data/2.5/",
+};
 function City() {
+  /* const [search, setSearch] = useState(""); */
+  const [weather, setWeather] = useState({});
+  const searchPressed = async (city) => {
+    const res = await fetch(
+      `${api.baseUrl}weather?q=${cityName}&units=metric&APPID=${api.key}`
+    );
+    const data = await res.json();
+    console.log(data);
+    setWeather(data);
+  };
+
   const { id } = useParams();
   const { getCity, currentCity, isLoading } = useCities();
+
+  const { cityName, emoji, date, notes } = currentCity;
 
   /* useEffect(
     function () {
@@ -23,8 +40,6 @@ function City() {
     },
     [id, getCity]
   ); */
-
-  const { cityName, emoji, date, notes } = currentCity;
 
   if (isLoading) return <Spinner />;
 
@@ -58,6 +73,17 @@ function City() {
         >
           Check out {cityName} on Wikipedia &rarr;
         </a>
+      </div>
+      <div className="weather">
+        {/* <input type="text" onChange={(e) => setSearch(e.target.value)} /> */}
+        <button onClick={searchPressed}>weather</button>
+
+        <p>{weather.name}</p>
+
+        {/* <p>{weather.main.temp}</p> */}
+
+        {/* <p>{weather.weather[0].main}</p>
+        <p>({weather.weather[0].description})</p> */}
       </div>
 
       <div>

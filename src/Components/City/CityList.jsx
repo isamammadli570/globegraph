@@ -1,8 +1,8 @@
-import Spinner from "./Spinner";
+import Spinner from "../Spinner/Spinner";
 import styles from "./CityList.module.css";
 import CityItem from "./CityItem";
-import Message from "./Message";
-import { useCities } from "../contexts/CitiesContext";
+import Message from "../Message/Message";
+import { useCities } from "../../contexts/CitiesContext";
 
 function CityList() {
   const { cities, isLoading } = useCities();

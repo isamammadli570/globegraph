@@ -1,16 +1,3 @@
 {
-  "cities": [
-    {
-      "id": "ca62",
-      "cityName": "Heras de Ayuso",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-07-27T19:48:46.633Z",
-      "notes": "",
-      "position": {
-        "lat": "40.79717741518769",
-        "lng": "-3.1061673089271173"
-      }
-    }
-  ]
+  "cities": []
 }

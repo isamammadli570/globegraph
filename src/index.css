@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 :root {
   --color-brand--1: #ffb545;
   --color-brand--2: #00c46a;
@@ -14,12 +17,11 @@
   --color-light--3: #d6dee0;
 }
 
-*{
+/* *{
   transition: all 0.3s ease-in-out;
 }
+ */
 
-
-/* sizing of map*/
 .leaflet-container {
   width: 80%;
   height: 100%;
