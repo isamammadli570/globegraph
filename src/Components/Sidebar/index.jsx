@@ -4,7 +4,7 @@ import AppNav from "../AppNav"
 
 function Sidebar() {
   return (
-    <div className="flex flex-col items-center gradientBg rounded-xl w-1/3 h-100 z-[1000]">
+    <div className="flex flex-col items-center gradientBg w-2/5 h-90 z-[1000]">
         
         <AppNav/>
         <Outlet />

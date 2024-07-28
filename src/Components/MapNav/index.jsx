@@ -8,7 +8,7 @@ import { FaBars } from "react-icons/fa";
 import { Link } from "react-scroll";
 import DarkMode from "../DarkMode";
 
-function PageNav() {
+function MapNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -23,11 +23,11 @@ function PageNav() {
   ];
   return (
     <>
-      <nav className="bg-white darkApp md:px-14 px-5 border-b max-w-screen-2xl p-2 mx-auto top-0 right-0 left-0 ">
+      <nav className="bg-[#183D3D] md:p-7 darkApp md:px-14 px-5 border-b max-w-screen-2xl mx-auto top-0 right-0 left-0 ">
         <div className="text-lg container mx-auto flex justify-between items-center font-medium">
           <div className="flex space-x-14 items-center">
             <a href="/">
-              <img className="md:w-32 w-28" src="logo.png" alt="" />
+              <img className="md:w-32 w-28" src=".././logo.png" alt="" />
             </a>
             <ul className="md:flex space-x-12 hidden">
               {navItems.map(({ link, path }) => (
@@ -101,4 +101,4 @@ function PageNav() {
   );
 }
 
-export default PageNav;
+export default MapNav;
