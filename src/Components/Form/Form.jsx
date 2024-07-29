@@ -23,26 +23,7 @@ export function convertToEmoji(countryCode) {
 
 const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client";
 
-
-const api = {
-  key: "9431c8ce43c3e0914d1311649ce8adb2",
-  baseUrl: "https://api.openweathermap.org/data/2.5/",
-};
-
-
 function Form() {
-  const [weather, setWeather] = useState({});
-  const searchPressed = async (city) => {
-    const res = await fetch(
-      `${api.baseUrl}weather?q=${cityName}&units=metric&APPID=${api.key}`
-    );
-    const data = await res.json();
-    console.log(data);
-    setWeather(data);
-  };
-
-
-  const [search, setSearch] =useState("")
   const [lat, lng] = useUrlPosition();
   const { createCity, isLoading } = useCities();
   const navigate = useNavigate();
@@ -145,15 +126,6 @@ function Form() {
           onChange={(e) => setNotes(e.target.value)}
           value={notes}
         />
-      </div>
-      <div className="">
-
-        <p>{weather.name}</p>
-
-        {/* <p>32</p>
-
-        <p>Sunny</p> */}
-
       </div>
 
       <div className={styles.buttons}>

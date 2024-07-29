@@ -7,7 +7,7 @@ function MapLayout() {
   return (
     <div>
       <MapNav/>
-      <div className="flex  relative h-lvh overscroll-y-none ">
+      <div className="md:flex relative h-lvh overscroll-y-none ">
         <Sidebar />
         <Map />
       </div>

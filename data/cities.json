@@ -1,3 +1,16 @@
 {
-  "cities": []
+  "cities": [
+    {
+      "id": "fb07",
+      "cityName": "Oviedo",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-07-29T18:26:17.400Z",
+      "notes": "",
+      "position": {
+        "lat": "43.33433484437222",
+        "lng": "-5.791254623477812"
+      }
+    }
+  ]
 }

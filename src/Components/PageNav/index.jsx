@@ -23,7 +23,7 @@ function PageNav() {
   ];
   return (
     <>
-      <nav className="bg-white darkApp md:px-14 px-5 border-b max-w-screen-2xl mx-auto fixed top-0 right-0 left-0 ">
+      <nav className="bg-white darkApp  md:px-14 px-5 border-b max-w-screen-2xl mx-auto fixed top-0 right-0 left-0 ">
         <div className="text-lg container mx-auto flex justify-between items-center font-medium">
           <div className="flex space-x-14 items-center">
             <a href="/">

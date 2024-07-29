@@ -17,19 +17,21 @@ const api = {
   key: "9431c8ce43c3e0914d1311649ce8adb2",
   baseUrl: "https://api.openweathermap.org/data/2.5/",
 };
+
 function City() {
-  /* const [search, setSearch] = useState(""); */
   const [weather, setWeather] = useState({});
+
   const searchPressed = async (city) => {
     const res = await fetch(
-      `${api.baseUrl}weather?q=${cityName}&units=metric&APPID=${api.key}`
+      `${api.baseUrl}weather?q=${cityName}&units=metric&appid=${api.key}`
     );
     const data = await res.json();
     console.log(data);
     setWeather(data);
   };
+  
 
-  const { id } = useParams();
+  /* const { id } = useParams(); */
   const { getCity, currentCity, isLoading } = useCities();
 
   const { cityName, emoji, date, notes } = currentCity;
@@ -76,14 +78,13 @@ function City() {
       </div>
       <div className="weather">
         {/* <input type="text" onChange={(e) => setSearch(e.target.value)} /> */}
-        <button onClick={searchPressed}>weather</button>
+        <button className="border  p-1" onClick={searchPressed}>weather</button>
 
         <p>{weather.name}</p>
 
-        {/* <p>{weather.main.temp}</p> */}
+        {<p>{weather.main ? `${Math.floor(weather.main.temp)}°` : null}</p>}
 
-        {/* <p>{weather.weather[0].main}</p>
-        <p>({weather.weather[0].description})</p> */}
+       <p>{weather.main ? weather.weather[0].main : null }</p>
       </div>
 
       <div>
